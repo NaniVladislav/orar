@@ -17,3 +17,232 @@ body {
     background-size: cover;
 }
 
+/* TEXT EDITING */
+h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    background: white;
+    color: #666666;
+    height: 60px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: white;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+button:hover > h3, 
+button:focus > h3 {
+    color: black;
+    background: #FFFFFF;
+}
+
+.who-are-you h3 {
+    background: #25975A;
+    height: 40px;
+    width: 120px;
+    align-content: center;
+    text-align: center;
+}
+
+h5 {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+
+/* BUTTONS */
+.buttons {
+    height: 20px;
+}
+
+.buttons a {
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    border-radius: 3px;
+    background: black;
+    padding: 5px 25px 5px 10px;
+    border: 1px solid white;
+}
+
+.buttons a:first-child {
+    background: #25975A;
+}
+.buttons a:nth-child(2) {
+    background: #f0506e;
+}
+.buttons a:last-child {
+    background: rgb(123, 70, 105);
+}
+
+.buttons a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.buttons svg {
+    position: absolute;
+}
+
+/* TABLE  */
+table {
+    width: 100%;
+    height: 200px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+tr th:first-child,
+thead th:not(:first-child) {
+    color: white;
+    background: #25975A;
+    border: 1px solid white;
+}
+
+#shedule1 tr th:first-child {
+    width: 120px;
+}
+
+#shedule1 thead th:not(:first-child) {
+    width: 50;
+}
+
+#shedule1, #shedule2 {
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.8);
+} 
+
+#shedule1 tbody tr th:not(:first-child) {
+    color: white;
+    width: 50px;
+}
+
+
+
+tbody tr th:not(:first-child) {
+    background: white;
+    border: 1px solid black;
+}
+
+#shedule2 tbody tr th:first-child {
+    width: 140px;
+    height: 95px;
+}
+
+#shedule2 tbody tr:hover * {
+    background: lightgoldenrodyellow;
+    color: black;
+}
+
+
+#shedule2 tbody tr th:first-child div {
+    font-size: 15px;
+    margin: 5px;
+}
+
+#shedule2 tbody tr th:not(:first-child) {
+    width: 565px;
+    color: #666;
+}
+
+#shedule1 tbody tr th:hover {
+    background: #f0506e;
+    border: 1px solid white;
+}
+
+#shedule1 tbody tr:hover > th:first-child {
+    background: lightgoldenrodyellow;
+    color: black;
+    border: 1px solid white;
+}
+
+/* SWITCH */
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+input:checked + .slider {
+    background-color: #25975A;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* OTHER */
+.who-are-you {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-zone,
+#week-of-year {
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+.instructions {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#week-of-year,
+#day-of-week {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #666;
+    border: none;
+    background: white;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
+
