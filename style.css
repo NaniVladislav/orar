@@ -17,16 +17,3 @@ body {
     background-size: cover;
 }
 
-/* TEXT EDITING */
-h1 {
-    font-family: sans-serif;
-    font-size: 20px;
-    background: white;
-    color: #666666;
-    height: 60px;
-    width: 450px;
-    align-content: center;
-    text-align: center;
-    margin: 0;
-}
-
